@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type='module' src="index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="main-container" class="container border border-success mt-2 p-4">
+        <label for="curso">Selecione seu curso:
+            <select name="curso" id="curso">
+                <option selected>Licenciatura em Letras</option>
+                <option value="ll">Licenciatura em Letras</option>
+                <option value="lp">Licenciatura em Pedagogia</option>
+                <option value="lm">Licenciatura em Matemática</option>
+                <option value="lf">Licenciatura em Física</option>
+                <option value="lq">Licenciatura em Química</option>
+                <option value="lb">Licenciatura em Biologia</option>
+                <option value="ec">Engenharia da Computação</option>
+                <option value="bti">Bacharelado em Tecnologia da Informação</option>
+                <option value="bcd">Bacharelado em Ciência de Dados</option>
+                <option value="ba">Bacharelado em Administração</option>
+                <option value="tpc">Tecnologia em Processos Gerenciais</option>
+                <option value="tgp">Tecnologia em Gestão Pública</option>
+                <option value="ep">Engenharia de Produção</option>
+            </select>
+        </label>
+
+        <div class="container">
+            <h4 class="mt-4">Descrição:</h4>
+            <p id="descricao"></p>
+            <h5 class="mt-4">Grade Curricular:</h5>
+            <p id="grade-curricular"></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
