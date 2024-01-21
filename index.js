@@ -3,9 +3,10 @@ import { mostrarDescricao } from "./ui.js";
 
 const cursoSelecionado = document.querySelector("#curso");
 
-document.addEventListener("DOMContentLoaded", () => {
-  cursoSelecionado.addEventListener("change", async () => {
-    const dados = await buscarDados();
+document.addEventListener("DOMContentLoaded", async () => {
+  const dados = await buscarDados();
+
+  cursoSelecionado.addEventListener("change", () => {
     console.log(dados);
     mostrarDescricao(dados);
   });
